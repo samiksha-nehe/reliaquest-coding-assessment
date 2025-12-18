@@ -146,3 +146,27 @@ and style guidelines with every build.
 To resolve any errors, you must run **spotlessApply** task.
 `./gradlew spotlessApply`
 
+### Implementation of Employee Rest API
+As part of this coding assessment, the required controller methods were implemented by designing and integrating the following components:
+
+**Controller Implementation**
+Created the concrete controller class to implement the given controller interface.
+Exposed REST endpoints as per the provided method definitions.
+
+**Service Layer**
+Implemented a dedicated service layer to encapsulate business logic.
+Ensured separation of concerns between controller and service layers.
+
+**Configuration**
+Used RestTemplate for configuration.
+
+**Model**
+Created request and response DTOs to map API payloads.
+Ensured clean data transformation between layers.
+
+**Exception Handling**
+Implemented centralized exception handling to manage application and API-level errors.
+Returned meaningful HTTP status codes and error messages for failure scenarios. 
+
+Also covered the test cases.
+
