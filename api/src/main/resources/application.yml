@@ -1,2 +1,13 @@
+logging.level.com.reliaquest: DEBUG
 spring.application.name: employee-api
-server.port: 8111
+server:
+  port: 8111
+  compression:
+    enabled: true
+  employees.max: 50
+
+mock:
+  employee:
+    uri: http://localhost:8112/api/v1/employee
+    connect-timeout: 10
+    read-timeout: 30
